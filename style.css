@@ -1,0 +1,351 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+;
+
+:root {
+    --main-color: #fff;
+    --second-color: #f0f0f0;
+    /* --shadow: 0 2px 2px rgb(0 0 0 / 0.5); */
+}
+
+section {
+    padding: 50px 10%;
+}
+
+img {
+    width: 100%;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin-top: -1.5rem;
+    box-shadow: 20px 1px 30px rgb(0 0 0 / 0.2) !important;
+    backdrop-filter: blur(3px);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar .offcanvas {
+    height: 100vh;
+}
+
+.navbar a {
+    font-size: 1rem;
+    /* padding: 11px 20px; */
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.offcanvas-body a:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* #menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+} */
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #f0f0f0;
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img {
+    flex: 1 1 8rem;
+}
+
+.home-img img {
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+
+    50% {
+        transform: translate(-0px, -11px);
+    }
+
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+.home-text .title {
+    font-size: 1.1rem;
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    font-weight: bolder;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin: 1rem 0 1.4rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading .title {
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.heading h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.product-container .box {
+    flex: 1 1 10rem;
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 5px 5px rgb(0 0 0 / 0.2);
+}
+
+.product-container .box .box-img {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+}
+
+.product-container .box .box-img img {
+    width: 100%;
+    height: 120%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.stars {
+    margin: 1rem 0 0.1rem;
+}
+
+.product-container .box .stars .bx {
+    color: #bfbfbf;
+}
+
+.product-container .box h2 {
+    font-size: 1.2rem;
+}
+
+.product-container .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.testimoni {
+    background: #f0f0f0;
+}
+
+.testi-heading {
+    text-align: center;
+}
+
+.testi-heading .title {
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.testi-heading h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.testi-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+    margin-top: 3rem;
+    padding: 0 50px;
+}
+
+.testi-container .card-body .bx {
+    width: 100%;
+}
+
+.about {
+    /* background: tomato; */
+    margin-bottom: -5rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about-heading .title {
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.about-heading h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: -80px;
+}
+
+/* .about-container {
+    flex: 1 1 21rem;
+    margin-top: -160px;
+} */
+
+.about-img{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+.about-text {
+    flex: 1 1 21rem;
+    padding-top: 3rem;
+    margin-top: -100px;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .navbar .nav-link {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .product-container {
+        font-size: 2rem;
+        padding: 80px;
+        margin-top: -3rem;
+    }
+
+    .product-container .box {
+        margin: 5rem;
+    }
+
+    .testi-container {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 90px;
+    }
+    .about-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobile Phone */
+@media(max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .home-text{
+        position: absolute;
+        padding-bottom: 50%;
+    }
+
+    .home-img img{
+        padding-top: 90%;
+    }
+    
+    .product-container {
+        margin-top: 1.9rem;
+        padding: 8px;
+    }
+    
+    .product-container .box {
+        flex: 1 1 calc(100% - 20px); /* Mengatur lebar card */
+        margin: 10px; /* Mengatur margin antar card */
+    }
+
+    .product-container .box .box-img {
+        width: 100%; /* Mengatur ukuran gambar agar sesuai dengan lebar card */
+        height: auto; /* Mengatur agar gambar proporsional */
+        margin-top: 0; /* Menghilangkan margin atas gambar */
+    }
+
+    .testi-container {
+        /* background-color: tomato; */
+        padding-top: 1rem;
+        margin: 0 10px;
+    }
+
+    .testi-container .card{
+        width: 100%; /* Mengatur lebar card testimoni */
+        margin: 10px auto; /* Mengatur margin dan posisi card testimoni */
+    }
+
+
+    .about-container .about-img {
+        margin-top: 90px;
+    }
+
+    .about-container .about-text {
+        margin-top: -100px;
+    }
+}
